@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
 <nav>
     <div class="logo"></div>
     <div class="hrefs">
@@ -23,19 +24,18 @@
         height: 60px;
         display: flex;
         justify-content: space-between;
-        box-shadow: -1px 8px 22px 1px rgba(70,70,70,0.81);
     }
     .logo {
         height: 100%;
     }
     .hrefs {
         height: 100%;
-        width: 600px;
+        width: 450px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 0 20px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        margin: 0 20px 0 0;
     }
     .hrefs a {
         flex: 1 1;
@@ -43,9 +43,10 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        color: #FFFFFF;
+        letter-spacing: 2px;
     }
     .hrefs a:hover {
         cursor: pointer;
-        background-color: #d4d0cf;
     }
 </style>
