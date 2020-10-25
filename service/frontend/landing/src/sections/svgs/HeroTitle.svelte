@@ -12,7 +12,7 @@
 </script>
 
 <svelte:window bind:innerWidth={width}/>
-<svg width="{width - 300}" viewBox="0 0 376 74.501" xmlns="http://www.w3.org/2000/svg">
+<svg class="title" width="{width - 200}" viewBox="0 0 376 74.501" xmlns="http://www.w3.org/2000/svg">
     <g id="svgGroup" stroke-linecap="round" fill-rule="nonzero" font-size="9pt" stroke="#000" stroke-width="0.1mm"
        fill="none" style="stroke:#ffffff;stroke-width:0.25mm;fill:none">
         {#if loaded}
@@ -22,3 +22,8 @@
         {/if}
     </g>
 </svg>
+<style>
+    .title {
+        max-width: 1500px;
+    }
+</style>

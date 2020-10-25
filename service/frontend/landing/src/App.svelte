@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
 <script>
     import About from "./sections/About.svelte";
 
@@ -41,13 +42,14 @@
         background-color: #000000;
     }
     main {
-        height: 100vh;
+        height: calc(100vh - 60px);
         text-align: center;
-        padding: 1em;
+        padding: 60px 0 0 0;
         margin: 0 auto;
         max-width: 1000px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 

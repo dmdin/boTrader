@@ -1,5 +1,4 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
 <nav>
     <div class="logo"></div>
     <div class="hrefs">
@@ -45,6 +44,7 @@
         height: 100%;
         color: #FFFFFF;
         letter-spacing: 2px;
+        font-size: 1.2em;
     }
     .hrefs a:hover {
         cursor: pointer;
