@@ -9,12 +9,16 @@
 </div>
 
 <style>
+    @media all and (min-width: 900px) {
+        .section {
+            padding: 130px 0 0 0;
+        }
+    }
     .section {
         z-index: 100;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 130px 0 0 0;
     }
 </style>

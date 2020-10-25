@@ -10,18 +10,27 @@
     </div>
 </nav>
 <style>
+    @media all and (max-width: 900px) {
+        nav {
+            display: none;
+        }
+    }
+    @media all and (min-width: 900px) {
+        nav {
+            display: flex;
+        }
+    }
     a {
         text-decoration: none;
         color: #000000;
     }
     nav {
         z-index: 10;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 60px;
-        display: flex;
         justify-content: space-between;
     }
     .logo {

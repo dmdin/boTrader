@@ -5,7 +5,7 @@
 
     let loaded = false;
     onMount(async () => {
-        setTimeout(() => loaded = true, 700)
+        setTimeout(() => loaded = true, 400)
 
     });
     let width;

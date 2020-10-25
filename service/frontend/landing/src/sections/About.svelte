@@ -1,7 +1,6 @@
 <script>
     export let visible = false;
 	import {fade} from 'svelte/transition'
-
 </script>
 <svelte:head>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -26,14 +25,52 @@
 		{/if}
 </div>
 <style>
+	@media all and (max-width: 900px) {
+		.content {
+			flex-direction: column;
+		}
+		.lottie {
+			order: -1;
+			width: 70%;
+			height: auto;
+			display: flex;
+			justify-content: center;
+			margin: 20px 0;
+		}
+		.info_block h1 {
+			font-size: 13vw;
+		}
+		.text_block {
+			width: 80%;
+			margin: 10px 0 40px 0;
+		}
+		.info_block p {
+			margin: 40px 0 20px 0;
+		}
+	}
+	@media all and (min-width: 900px){
+		.section {
+			height: 100vh;
+		}
+		.lottie {
+			flex-basis: 500px;
+			flex-shrink: 1;
+		}
+		.info_block h1{
+			font-size: 92px;
+		}
+		.text_block {
+		width: 600px;
+	}
+		.info_block p {
+			margin: 40px 0 20px 20px;
+		}
+	}
     .section {
         width: 100%;
     }
-	.info_block {
-	}
     .info_block h1 {
 		font-family: Oswald, sans-serif;
-		font-size: 92px;
 		margin:0;
   text-align: center;
   text-rendering: optimizeLegibility;
@@ -51,19 +88,12 @@
 		align-items: center;
 		margin: 0 auto;
 	}
-	.text_block {
-		width: 600px;
-	}
 	.info_block p {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 20px;
 		color: #e0dfdc;
-		margin: 40px 0 20px 20px;
 		padding: 10px 20px;
 		border-left: 2px solid #FFFFFF;
 		border-right: 2px solid #FFFFFF;
-	}
-	.lottie {
-		width: 500px;
 	}
 </style>
