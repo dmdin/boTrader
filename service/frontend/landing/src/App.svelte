@@ -1,5 +1,5 @@
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
-<script>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,300&display=swap" rel="stylesheet">
+ <script>
   let about_visible = false;
   let team_visible = false;
   let drown = false;
@@ -22,43 +22,39 @@
 
 
   onMount(async () => {
-    // const module = await import("svelte-particles");
-    // ParticlesComponent = module.default;
+
   });
 
   let height;
 </script>
 
 <svelte:window bind:outerHeight={height}/>
-<div class="window">
+<body>
   <main>
     <Header/>
     <Hero/>
-  </main>
-  <About visible={about_visible}/>
-  <Team visible={team_visible}/>
-</div>
-<style>
-  @media all and (max-width: 900px) {
-    main {
-      height: 100vh;
-    }
-  }
+    <About visible={about_visible}/>
 
+  </main>
+<!--  <Team visible={team_visible}/>-->
+</body>
+<style>
+  :root {
+    background: black;
+  }
   @media all and (min-width: 900px) {
     main {
-      height: calc(100vh - 60px);
+      /*height: calc(100vh - 60px);*/
       padding: 60px 0 0 0;
     }
   }
 
-  .window {
-    min-height: 1800px;
+  body {
     background-color: #000000;
   }
 
   main {
-    height: calc(100vh - 60px);
+    /*height: calc(100vh - 60px);*/
     text-align: center;
     margin: 0 auto;
     max-width: 1000px;
@@ -75,9 +71,4 @@
     font-weight: 100;
   }
 
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
-  }
 </style>

@@ -1,13 +1,9 @@
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 <nav>
   <div class="logo"></div>
   <div class="hrefs">
-    <a>Главная
-      <div class="masc"></div>
-    </a>
-    <a>О boTrade</a>
-    <a>Команда</a>
-    <a>Контакты</a>
+    <a href="#">Главная</a>
+    <a href="./#about">О boTrade</a>
+    <a href="https://2d-team.now.sh">Команда</a>
   </div>
 </nav>
 <style>
@@ -29,7 +25,7 @@
   }
 
   nav {
-    z-index: 10;
+    z-index: 20;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,26 +40,31 @@
 
   .hrefs {
     height: 100%;
-    width: 450px;
+    width: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-style: italic;
     margin: 0 20px 0 0;
   }
 
   .hrefs a {
     flex: 1 1;
+    z-index: 21;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     color: #FFFFFF;
     letter-spacing: 2px;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    transition: all 0.5s ease;
   }
 
   .hrefs a:hover {
     cursor: pointer;
+    text-shadow: 0 0 1px white;
   }
 </style>

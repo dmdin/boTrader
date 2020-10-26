@@ -5,7 +5,7 @@
 <svelte:head>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </svelte:head>
-<div class="section">
+<div class="section" id="about">
   {#if visible}
     <div in:fade="{{duration:2000}}" class="info_block">
       <h1>О boTrade</h1>
@@ -55,7 +55,7 @@
 
   @media all and (min-width: 900px) {
     .section {
-      height: 100vh;
+      height: 80vh;
     }
 
     .lottie {
@@ -81,10 +81,11 @@
   }
 
   .info_block h1 {
-    font-family: Oswald, sans-serif;
+    font-family: Montserrat, sans-serif;
     margin: 0;
     text-align: center;
-    text-rendering: optimizeLegibility;
+    font-weight: 100;
+    /*text-rendering: optimizeLegibility;*/
     color: #e0dfdc;
     letter-spacing: .1em;
     text-shadow: -1px -1px 1px #999999,
