@@ -16,6 +16,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "lottie-player": "^1.0.0",
     "p5": "^1.1.9",
     "sirv-cli": "^1.0.0"
   }
