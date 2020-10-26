@@ -73,6 +73,7 @@
 
     .info_block p {
       margin: 40px 0 20px 20px;
+      text-align: justify;
     }
   }
 
